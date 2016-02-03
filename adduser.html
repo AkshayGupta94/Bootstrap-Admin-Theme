@@ -2,7 +2,7 @@
 <html>
     
     <head>
-        <title>Forms</title>
+        <title>Users</title>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
@@ -128,39 +128,29 @@
             <div class="row-fluid">
                 <div class="span3" id="sidebar">
                     <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
-                        <li >
-                            <a href="index.html"><i class="icon-chevron-right"></i> Dashboard</a>
+                        <li class="active">
+                            <a href="adduser.html"><i class="icon-chevron-right"></i> Add a new user</a>
                         </li>
                         
                             
-                        <li class="active">
-                            <a href="form.html"><i class="icon-chevron-right"></i>Upload Forms</a>
-                        </li>
                         <li>
-                            <a href="#"><span class="badge badge-warning pull-right">4,231</span> Logs</a>
+                            <a href="viewuser.html"><i class="icon-chevron-right"></i>View/Search users</a>
                         </li>
+                        
                     </ul>
                 </div>
             
                 <!--/span-->
                 <div class="span9" id="content">
-                     <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#images">Image</a></li>
-  <li><a data-toggle="tab" href="#videos">Video</a></li>
-  <li><a data-toggle="tab" href="#audios">Audio</a></li>
-</ul>
-
-<div class="tab-content">
-  <div id="images" class="tab-pane fade in active">
-    <div class="block">
+				<div class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Image Upload</div>
+                                <div class="muted pull-left">Add User</div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
                                     <form class="form-horizontal">
                                       <fieldset>
-                                        <legend>Form Components</legend>
+                                        <legend>Enter New User details</legend>
                                         <div class="control-group">
                                           <label class="control-label" for="typeahead">Text input </label>
                                           <div class="controls">
@@ -228,190 +218,13 @@
                                 </div>
                             </div>
                         </div>
-  </div>
-  <div id="videos" class="tab-pane fade">
-    <div class="block">
-                            <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Form Validation</div>
-                            </div>
-                            <div class="block-content collapse in">
-                                <div class="span12">
-					<!-- BEGIN FORM-->
-					<form action="#" id="form_sample_1" class="form-horizontal">
-						<fieldset>
-							<div class="alert alert-error hide">
-								<button class="close" data-dismiss="alert"></button>
-								You have some form errors. Please check below.
-							</div>
-							<div class="alert alert-success hide">
-								<button class="close" data-dismiss="alert"></button>
-								Your form validation is successful!
-							</div>
-  							<div class="control-group">
-  								<label class="control-label">Name<span class="required">*</span></label>
-  								<div class="controls">
-  									<input type="text" name="name" data-required="1" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Email<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="email" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">URL<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="url" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">e.g: http://www.demo.com or http://demo.com</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Number<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="number" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Digits<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="digits" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Credit Card<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="creditcard" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">e.g: 5500 0000 0000 0004</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Occupation&nbsp;&nbsp;</label>
-  								<div class="controls">
-  									<input name="occupation" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">optional field</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Category<span class="required">*</span></label>
-  								<div class="controls">
-  									<select class="span6 m-wrap" name="category">
-  										<option value="">Select...</option>
-  										<option value="Category 1">Category 1</option>
-  										<option value="Category 2">Category 2</option>
-  										<option value="Category 3">Category 5</option>
-  										<option value="Category 4">Category 4</option>
-  									</select>
-  								</div>
-  							</div>
-  							<div class="form-actions">
-  								<button type="submit" class="btn btn-primary">Validate</button>
-  								<button type="button" class="btn">Cancel</button>
-  							</div>
-						</fieldset>
-					</form>
-					<!-- END FORM-->
-				</div>
-			    </div>
-			</div>
-  </div>
-  <div id="audios" class="tab-pane fade">
-    <div class="block">
-                            <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Form Validation</div>
-                            </div>
-                            <div class="block-content collapse in">
-                                <div class="span12">
-					<!-- BEGIN FORM-->
-					<form action="#" id="form_sample_1" class="form-horizontal">
-						<fieldset>
-							<div class="alert alert-error hide">
-								<button class="close" data-dismiss="alert"></button>
-								You have some form errors. Please check below.
-							</div>
-							<div class="alert alert-success hide">
-								<button class="close" data-dismiss="alert"></button>
-								Your form validation is successful!
-							</div>
-  							<div class="control-group">
-  								<label class="control-label">Name<span class="required">*</span></label>
-  								<div class="controls">
-  									<input type="text" name="name" data-required="1" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Email<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="email" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">URL<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="url" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">e.g: http://www.demo.com or http://demo.com</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Number<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="number" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Digits<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="digits" type="text" class="span6 m-wrap"/>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Credit Card<span class="required">*</span></label>
-  								<div class="controls">
-  									<input name="creditcard" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">e.g: 5500 0000 0000 0004</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Occupation&nbsp;&nbsp;</label>
-  								<div class="controls">
-  									<input name="occupation" type="text" class="span6 m-wrap"/>
-  									<span class="help-block">optional field</span>
-  								</div>
-  							</div>
-  							<div class="control-group">
-  								<label class="control-label">Category<span class="required">*</span></label>
-  								<div class="controls">
-  									<select class="span6 m-wrap" name="category">
-  										<option value="">Select...</option>
-  										<option value="Category 1">Category 1</option>
-  										<option value="Category 2">Category 2</option>
-  										<option value="Category 3">Category 5</option>
-  										<option value="Category 4">Category 4</option>
-  									</select>
-  								</div>
-  							</div>
-  							<div class="form-actions">
-  								<button type="submit" class="btn btn-primary">Validate</button>
-  								<button type="button" class="btn">Cancel</button>
-  							</div>
-						</fieldset>
-					</form>
-					<!-- END FORM-->
-				</div>
-			    </div>
-			</div>
- </div>
-</div>
-                     
-
-                     
-                    
+				
 
                 </div>
             </div>
             <hr>
             <footer>
-                <p>&copy; Vincent Gabriel 2013</p>
+                <p>&copy; DESIDOC</p>
             </footer>
         </div>
         <!--/.fluid-container-->
